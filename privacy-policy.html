@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy — Muthu Medicals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --green: #1a3d2b;
+      --green-mid: #2d6a4f;
+      --green-light: #52b788;
+      --cream: #f8f5ef;
+      --cream-dark: #ede8df;
+      --text: #1c1c1c;
+      --text-muted: #5a5a5a;
+      --border: #d4cfc6;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--cream);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Header */
+    header {
+      background: var(--green);
+      padding: 48px 0 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      border-radius: 50%;
+      background: rgba(82,183,136,0.08);
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: 10%;
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      background: rgba(82,183,136,0.05);
+    }
+
+    .header-inner {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 0 32px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+
+    .brand-icon {
+      width: 44px; height: 44px;
+      background: var(--green-light);
+      border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 22px;
+    }
+
+    .brand-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #fff;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-sub {
+      font-size: 11px;
+      color: var(--green-light);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 300;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    header h1 span {
+      color: var(--green-light);
+    }
+
+    .header-meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.5);
+      letter-spacing: 0.04em;
+    }
+
+    /* Main content */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 32px 80px;
+    }
+
+    .intro-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--green-light);
+      border-radius: 8px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .intro-box strong {
+      color: var(--green);
+      font-weight: 500;
+    }
+
+    section {
+      margin-bottom: 44px;
+    }
+
+    .section-number {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green-light);
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      font-weight: 600;
+      color: var(--green);
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+
+    p {
+      font-size: 15px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+      line-height: 1.8;
+    }
+
+    ul {
+      list-style: none;
+      margin: 12px 0 16px;
+      padding: 0;
+    }
+
+    ul li {
+      font-size: 15px;
+      color: var(--text-muted);
+      padding: 8px 0 8px 24px;
+      border-bottom: 1px solid var(--cream-dark);
+      position: relative;
+      line-height: 1.6;
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: var(--green-light);
+      font-size: 13px;
+    }
+
+    .highlight-block {
+      background: var(--cream-dark);
+      border-radius: 8px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight-block p {
+      margin-bottom: 0;
+      font-size: 14px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 48px 0;
+    }
+
+    /* Contact section */
+    .contact-card {
+      background: var(--green);
+      border-radius: 12px;
+      padding: 32px;
+      color: #fff;
+    }
+
+    .contact-card h2 {
+      color: #fff;
+      margin-bottom: 8px;
+    }
+
+    .contact-card p {
+      color: rgba(255,255,255,0.65);
+      margin-bottom: 20px;
+    }
+
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .contact-detail-icon {
+      width: 36px; height: 36px;
+      background: rgba(82,183,136,0.2);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .contact-detail-text {
+      font-size: 14px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .contact-detail-label {
+      font-size: 11px;
+      color: var(--green-light);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--cream-dark);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      padding: 24px 32px;
+      font-size: 12px;
+      color: var(--text-muted);
+      letter-spacing: 0.04em;
+    }
+
+    footer a {
+      color: var(--green-mid);
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      main { padding: 40px 20px 60px; }
+      .header-inner { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="brand">
+      <div class="brand-icon">🏥</div>
+      <div>
+        <div class="brand-name">Muthu Medicals</div>
+        <div class="brand-sub">Healthcare &amp; Pharmacy</div>
+      </div>
+    </div>
+    <h1>Privacy <span>Policy</span></h1>
+    <div class="header-meta">Effective date: May 1, 2026 &nbsp;·&nbsp; Last updated: May 1, 2026</div>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro-box">
+    This Privacy Policy describes how <strong>Muthu Medicals</strong> ("we", "us", or "our") collects, uses, and protects information when you use our WhatsApp-based consultation and pharmacy coordination service (<strong>TheConnector</strong>). By initiating a conversation with our WhatsApp number, you agree to the practices described in this policy.
+  </div>
+
+  <!-- 1 -->
+  <section>
+    <div class="section-number">01</div>
+    <h2>Information We Collect</h2>
+    <p>When you use TheConnector via WhatsApp, we collect the following information:</p>
+    <ul>
+      <li><strong>Your name</strong> — provided by you during the consultation intake process</li>
+      <li><strong>Your age</strong> — provided by you during the consultation intake process</li>
+      <li><strong>Symptom description</strong> — the health concern you describe in text</li>
+      <li><strong>Photos or media</strong> — images you voluntarily send to assist the doctor's assessment</li>
+      <li><strong>WhatsApp phone number</strong> — automatically provided when you initiate contact</li>
+      <li><strong>Message timestamps</strong> — recorded for session management purposes</li>
+    </ul>
+    <p>We do not collect payment information, government identification, or any other personal data beyond what is listed above.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 2 -->
+  <section>
+    <div class="section-number">02</div>
+    <h2>How We Use Your Information</h2>
+    <p>Your information is used solely for the purpose of delivering the consultation and pharmacy coordination service:</p>
+    <ul>
+      <li>Routing your consultation request to the assigned doctor</li>
+      <li>Enabling the doctor to review your symptoms and respond</li>
+      <li>Generating a structured prescription for pharmacy fulfilment</li>
+      <li>Coordinating with our partnered pharmacy for medicine availability and delivery</li>
+      <li>Sending you confirmation messages and reference codes</li>
+    </ul>
+    <div class="highlight-block">
+      <p><strong>Important:</strong> Your consultation conversation (name, age, symptoms, and chat messages) is never shared with our pharmacy partner. The pharmacy receives only a structured prescription containing medicine names, dosage, duration, and your contact number for coordination purposes.</p>
+    </div>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 3 -->
+  <section>
+    <div class="section-number">03</div>
+    <h2>Data Storage &amp; Security</h2>
+    <p>Your session data is stored on a secured private server hosted in India (Oracle Cloud, Hyderabad region). We implement the following security measures:</p>
+    <ul>
+      <li>All data is stored on encrypted servers with restricted access</li>
+      <li>Session data is automatically expired after consultation completion</li>
+      <li>Our server communicates with WhatsApp exclusively over HTTPS (TLS encrypted)</li>
+      <li>Webhook requests are verified using HMAC-SHA256 signature validation</li>
+      <li>No consultation data is stored in third-party analytics or marketing systems</li>
+    </ul>
+    <p>Session data including your name, age, symptoms, and messages are retained only for the duration of the active consultation and a short period thereafter for reference, after which they are purged automatically.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 4 -->
+  <section>
+    <div class="section-number">04</div>
+    <h2>Information Sharing</h2>
+    <p>We do not sell, trade, or rent your personal information to any third party. Information is shared only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>With our doctor</strong> — your name, age, symptoms, and photos you share during the consultation</li>
+      <li><strong>With our pharmacy partner</strong> — only your name, contact number, and the structured prescription (medicine, dosage, duration). Your symptoms and conversation are never shared.</li>
+      <li><strong>With WhatsApp / Meta</strong> — message delivery is facilitated through Meta's WhatsApp Business API, subject to Meta's own privacy policy</li>
+      <li><strong>Legal obligations</strong> — if required by law or court order, we may disclose information to appropriate authorities</li>
+    </ul>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 5 -->
+  <section>
+    <div class="section-number">05</div>
+    <h2>User Consent</h2>
+    <p>By sending a message to our WhatsApp business number, you voluntarily initiate contact and consent to:</p>
+    <ul>
+      <li>Providing personal health information for consultation purposes</li>
+      <li>Receiving automated and human responses via WhatsApp</li>
+      <li>Your prescription being shared with our partnered pharmacy for fulfilment</li>
+      <li>Your contact number being used by the pharmacy to coordinate your order</li>
+    </ul>
+    <p>You may withdraw consent at any time by discontinuing use of the service. For deletion of your data, please contact us using the details below.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 6 -->
+  <section>
+    <div class="section-number">06</div>
+    <h2>Children's Privacy</h2>
+    <p>Our service is not directed at children under the age of 13. If you are consulting on behalf of a minor, a parent or legal guardian must initiate and oversee the consultation. We do not knowingly collect personal data from children under 13 without parental consent.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 7 -->
+  <section>
+    <div class="section-number">07</div>
+    <h2>Your Rights</h2>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Request access to the personal data we hold about you</li>
+      <li>Request correction of inaccurate data</li>
+      <li>Request deletion of your data after consultation is complete</li>
+      <li>Withdraw consent to future communications at any time</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us using the details in the section below. We will respond within 7 business days.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- 8 -->
+  <section>
+    <div class="section-number">08</div>
+    <h2>Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or applicable laws. The effective date at the top of this page will be updated accordingly. Continued use of the service after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <hr class="divider"/>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <div class="section-number" style="color: var(--green-light);">09</div>
+    <h2>Contact Us</h2>
+    <p>For privacy-related queries, data deletion requests, or any concerns about this policy, please reach out to us:</p>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">🏥</div>
+      <div>
+        <div class="contact-detail-label">Business</div>
+        <div class="contact-detail-text">Muthu Medicals</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">📍</div>
+      <div>
+        <div class="contact-detail-label">Location</div>
+        <div class="contact-detail-text">Chennai, Tamil Nadu, India</div>
+      </div>
+    </div>
+    <div class="contact-detail">
+      <div class="contact-detail-icon">💬</div>
+      <div>
+        <div class="contact-detail-label">WhatsApp</div>
+        <div class="contact-detail-text">+91 76958 17907</div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  &copy; 2026 Muthu Medicals. All rights reserved.
+  &nbsp;·&nbsp; Chennai, Tamil Nadu, India
+</footer>
+
+</body>
+</html>
